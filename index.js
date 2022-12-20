@@ -6,7 +6,7 @@ var score = 0;
 
 function quiz (question , answer){
   var userAnswer = readlinesync.question(question)
-  if(userAnswer === answer){
+  if(userAnswer.toUpperCase() === answer.toUpperCase()){
     console.log("Well! Sahi Jawab")
       score = score + 1;
    }
